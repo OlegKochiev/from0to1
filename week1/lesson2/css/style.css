@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.images-1 {
+  transition: all 2s ease-out 0s;
+}
+
+.images-1:hover {
+  transform: rotate(360deg);
+}
+
+.arrow {
+  cursor: pointer;
+  transform: rotate(180deg);
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+
+.box {
+  border: 2px solid #000;
+  background-color: #ccc;
+  position: relative;
+  height: 500px;
+  margin: 20px 0;
+}
+
+.text {
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  width: 400px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.title {
+  text-align: center;
+}
+
+.title-1 {
+  font-style: 50px;
+  margin: 25px 0 50px;
+  position: sticky;
+  top: 0;
+  padding: 20px 0;
+  z-index: 1;
+}
+
+.title-1::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #ccc;
+  position: absolute;
+  left: 0;
+  border-radius: 50%;
+}
+
+.text-1 {
+  font-size: 20px;
+  background-color: #ccc;
+}
+
+.text-2 {
+  font-size: 18 px;
+  background-color: #ccc;
+}
+
+.text-3 {
+  font-style: italic;
+}
+
+.text-4 {
+  text-align: right;
+  font-size: 14px;
+}

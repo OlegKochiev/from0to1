@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid red;
+  display: block;
+  text-align: center;
+  color: rgb(85, 73, 104);
+}
+
+.title-main {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 10px;
+  padding-top: 10px;
+}
+.img1 {
+  width: 1000px;
+  margin-bottom: 30px;
+}
+
+.title-common_information {
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+.text-common__information {
+  width: 900px;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+.text-common__information > b {
+  font-size: 20px;
+}
