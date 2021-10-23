@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *::after,
 *::before {
@@ -11,35 +12,66 @@ html {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid red;
-  display: block;
+}
+
+.title {
   text-align: center;
-  color: rgb(85, 73, 104);
+  margin-bottom: 20px;
+  color: #575890;
+}
+
+.text {
+  text-indent: 25px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  text-align: justify;
+  color: black;
+}
+
+.img {
+  width: 1000px;
+  margin: 0 auto 25px;
+  display: block;
 }
 
 .title-main {
-  text-align: center;
   font-size: 30px;
   font-weight: bold;
   margin: 30px 10px;
-  padding-top: 10px;
 }
-.img1 {
-  width: 1000px;
-  margin-bottom: 30px;
+
+.title-main::before,
+.title-main::after {
+  content: "\273f";
+  color: rgb(255, 116, 116);
+  background: rgb(255, 255, 199);
+  border-radius: 50%;
 }
 
 .title-common_information {
-  margin-bottom: 30px;
   font-size: 26px;
 }
 
-.text-common__information {
-  width: 900px;
-  font-size: 18px;
-  margin: 0 auto;
+.title-weather {
+  font-size: 22px;
 }
 
-.text-common__information > b {
+.text-weather1 {
+  margin-bottom: 5px;
+}
+
+.item-weather {
+  margin: 5px 0 5px 30px;
+}
+
+.title-citys {
+  font-size: 22px;
+}
+
+.text-citys {
+  font-style: italic;
+}
+
+.title-city {
   font-size: 20px;
 }
