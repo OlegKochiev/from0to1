@@ -1,0 +1,14 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+.slider {
+	width: 900px;
+	margin: 0 auto;
+}
