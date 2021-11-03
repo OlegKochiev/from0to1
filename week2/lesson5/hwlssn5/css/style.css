@@ -24,7 +24,6 @@ body {
 	font-size: 48px;
 	font-weight: 700;
 	color: #333;
-	z-index: 0;
 }
 
 .title::before {
@@ -80,17 +79,13 @@ body {
 }
 
 .logo:active {
-	outline: none;
+	outline: transparent;
 	opacity: 0.5;
 }
 
 .menu__list {
 	display: flex;
 	justify-content: flex-end;
-}
-
-.menu__list .menu__item:last-child {
-	margin-right: 0;
 }
 
 .menu__item {
@@ -114,7 +109,7 @@ body {
 .menu__link:active,
 .header__link:active {
 	opacity: 0.7;
-	outline: none;
+	outline: transparent;
 	text-decoration-line: none;
 }
 
@@ -150,14 +145,10 @@ body {
 	transition: border-color 0.25s linear;
 }
 
-.header__text:hover {
-	border-bottom: 1px solid #fff;
-}
-
 .header__text:active {
 	opacity: 0.7;
 	border: none;
-	outline: none;
+	outline: transparent;
 }
 
 .header__text::after {
@@ -169,6 +160,10 @@ body {
 	bottom: -30px;
 	left: calc(50% - 19px);
 	transition: bottom 0.3s;
+}
+
+.header__link:hover .header__text {
+	border-bottom: 1px solid #fff;
 }
 
 .header__link:hover .header__text::after {
@@ -215,7 +210,6 @@ body {
 	max-width: 600px;
 	width: 100%;
 }
-
 
 .skills__info-item {
 	width: 100%;
@@ -331,12 +325,15 @@ body {
 }
 
 .works__item button:active {
-	text-decoration: none;
 	color: #2352DE;
 }
 
 .works__item:last-child {
 	margin-right: 0;
+}
+
+.mixitup-control-active button {
+	color: #2352DE;
 }
 
 .works__content {
@@ -350,6 +347,7 @@ body {
 .works__content-item {
 	position: relative;
 	margin-bottom: 45px;
+	margin-right: 20px;
 }
 
 .works__content-item:hover .works__link {
@@ -388,22 +386,25 @@ body {
 	line-height: 1.3;
 	background-color: #2352DE;
 	color: #fff;
+	box-shadow: -1px 5px 5px 0px rgba(51, 51, 51, 0.28);
+	outline: transparent;
 	border: none;
-	outline: none;
 }
 
 .works__show-more:focus {
-	box-shadow: 0 0 0 3px rgba(35, 82, 222, 0.5);
+	outline: 3px solid rgba(35, 82, 222, 0.5);
 }
 
 .works__show-more:hover {
 	background-color: #fff;
 	color: #2352DE;
-	box-shadow: 0 0 0 1px rgba(35, 82, 222, 1);
+	border: 2px solid #2352DE;
+	outline: transparent;
 }
 
 .works__show-more:active {
 	background-color: #2352DE;
 	color: #fff;
-	box-shadow: inset 0px 2px 0px rgba(15, 15, 14, 0.795), rgba(35, 82, 222, 0.5);
+	box-shadow: inset 0px 5px 7px 0px rgba(51, 51, 51, 0.28),
+		-1px 5px 5px 0px rgba(51, 51, 51, 0.28);
 }
