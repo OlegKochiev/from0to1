@@ -24,10 +24,17 @@ p,
 ul,
 ol,
 li,
-figure,
-figcaption,
 blockquote {
 	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font: inherit;
 }
 
 ul {
@@ -48,8 +55,9 @@ button,
 textarea,
 select {
 	padding: 0;
-	bottom: none;
+	border: none;
 	font: inherit;
+	background-color: transparent;
 }
 
 a {
