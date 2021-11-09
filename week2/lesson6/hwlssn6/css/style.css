@@ -377,7 +377,7 @@ body {
 }
 
 .works__content-item:hover .works__item-text {
-	opacity: 1;
+	opacity: 0.8;
 }
 
 .works__item-text {
@@ -400,7 +400,6 @@ body {
 }
 
 .comments {
-	position: relative;
 	background-color: #F6F6F8;
 }
 
@@ -422,31 +421,25 @@ body {
 .slick-dots {
 	position: absolute;
 	display: flex;
-	bottom: -50px;
+	width: 70px;
+	justify-content: space-between;
+	bottom: -80px;
 	left: 43%;
 }
 
-.slick-dots li {
-	margin-right: 20px;
-}
-
-.slick-dots li:last-child {
-	margin-right: 0;
-}
-
 .slick-dots button {
-	width: 15px;
-	height: 15px;
+	width: 11px;
+	height: 11px;
 	font-size: 0;
 	border-radius: 50%;
-	background-color: rgb(46, 60, 80);
+	background-color: rgba(46, 60, 80, 0.603);
+	transition: width 0.35s, height 0.35s;
 }
 
 .slick-active button {
-	width: 20px;
-	height: 20px;
-	background-color: rgba(46, 60, 80, 0.603);
-
+	width: 15px;
+	height: 15px;
+	background-color: rgb(46, 60, 80);
 }
 
 .comments__profile {
@@ -493,14 +486,13 @@ body {
 
 .comments__link::before {
 	content: "";
-	display: block;
+	position: absolute;
 	width: 100px;
 	height: 100px;
 	background-image: url("../images/play.svg");
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
-	position: absolute;
 	top: calc(50% - 50px);
 	left: calc(50% - 50px);
 	transition: width 0.3s, height 0.3s, top 0.3s, left 0.3s;
@@ -509,7 +501,6 @@ body {
 
 .comments__link::after {
 	content: "";
-	display: block;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -571,7 +562,6 @@ body {
 }
 
 .statistics__count {
-	display: block;
 	font-size: 44px;
 	line-height: 1;
 	font-weight: 600;
@@ -623,6 +613,7 @@ body {
 
 .contacts__info {
 	display: block;
+	width: fit-content;
 	color: rgba(35, 82, 222, 1);
 	outline: transparent;
 	text-decoration: 1px solid underline;
