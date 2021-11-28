@@ -26,7 +26,6 @@ $(function () {
 	});
 
 	$(window).scroll(() => {
-		console.log($(window).scrollTop())
 		if ($(window).scrollTop() > 0) {
 			$('.header__top').addClass('header__top--scrolled');
 		} else if ($(window).scrollTop() < 100) {

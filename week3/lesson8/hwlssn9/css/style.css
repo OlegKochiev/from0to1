@@ -142,7 +142,8 @@ body {
 	top: 0;
 	left: 0;
 	right: 0;
-	margin-top: 75px;
+	margin-top: 70px;
+	padding: 5px 0;
 	z-index: 100;
 	background-color: rgba(189, 183, 255, 0);
 	transition: margin-top 0.5s, background-color 0.7s;
@@ -150,7 +151,8 @@ body {
 
 .header__top--scrolled {
 	margin-top: 0;
-	background-color: rgb(114, 114, 114);
+	background-color: rgba(35, 82, 222, 0.7);
+
 }
 
 .header__burger {
